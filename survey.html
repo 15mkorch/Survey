@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+
+
+  <h1 id="title"> Your Thoughts? </h1>
+
+  <div>
+    <p id="description"> Your clothes. Your style. Your fit. </p>
+  </div>
+
+<div class=rowtab>
+  <div>
+    <form action="submit" id="survey-form">
+      <div class="info">
+        <label id="name-label"> * Name
+          <input type="textr" id="name" placeholder="enter name" required>
+        </label>
+        <label id="email-label"> * E-mail
+          <input type="email" id="email" placeholder="email" required>
+        </label>
+        <label id="number-label"> * Age
+          <input type="number" id="number" placeholder="enter age" class="input field" min="1" max="120" required>
+        </label>
+      </div>
+
+      <p> Do you value ethics in buying clothes?</p>
+      <select id="dropdown">
+        <option value="Yes"> Yes</option>
+        <option value="No"> No </option>
+        <option value="indifferent">Only if its publicized</option>
+      </select>
+      <p> Where do you shop?</p>
+
+      <div class="radio-flex">
+        <label class="flex-item">
+          <input type="radio" name="ShopsAt" id="a" value="LuluLemon">
+          Lulu Lemon
+        </label>
+
+        <label class="flex-item">
+          <input type="radio" name="ShopsAt" value="Nike" id="b">
+          Nike
+        </label>
+
+        <label class="flex-item">
+          <input type="radio" name="ShopsAt" value="Target" id="c">
+          Target
+        </label>
+
+        <label class="flex-item">
+          <input type="radio" name="ShopsAt" value="OutdoorVoices">
+          Outdoor Voices
+        </label>
+        <label class="flex-item">
+          <input type="radio" name="ShopsAt" value="OutdoorVoices">
+          Thrift Store/Goodwill
+        </label>
+
+
+
+        <label for="most-like"> What is the main reason behind where you shop: </label>
+        <select id="most-like" name="mostlike" class="dropdown">
+            <option> Select and option</option>
+            <option value="popularity">Popularity</option>
+            <option value="price"> Price</option>
+            <option value="fit"> Fit </option>
+            <option value="availability"> Availability </option>
+        </select>
+      </div>
+      <div id="ethics question">
+        <p> What causes are important to you?</p>
+
+            <input type="checkbox" name="ethics" value="Body-Image">Women's Image
+          <br/>
+          <input type="checkbox" name="ethics" value="labor">Labor's Rights<br/>
+          <input type="checkbox" name="ethics" value="envrionment">Environment <br/>
+          <input type="checkbox" name="ethics" value="Equal Pay">Equal Gender Pay<br/>
+          <input type="checkbox" name="ethics" value="Ministry">Ministry and Spiritual Development<br/>
+      </div>
+      <p> Are there any athletic clothing pieces you would like to see? Or anything that doesn't meet your needs?</p>
+      <textarea id="additional-comments" class="input-field" style="height:100px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+
+      <button id="submit" type="submit"> Submit </button>
+    </form>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
